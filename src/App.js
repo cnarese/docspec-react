@@ -1,14 +1,16 @@
 import './App.css';
-import NavBar from './components/NavBar';
-import TopBar from './components/TopBar';
-import Home from './pages/Home.js';
+import TopBar from './components/topbar/TopBar';
+import SideBar from './components/sidebar/SideBar';
+import Home from './pages/home/Home.js';
 
 function App() {
   return (
-    <div className="App">
-      <TopBar/>
-      <NavBar/>
-      <Home/>
+    <div>
+      <TopBar />
+      <div className="container">
+        <SideBar />
+        <Home />
+      </div>
     </div>
   );
 }
